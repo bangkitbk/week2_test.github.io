@@ -1,0 +1,88 @@
+/* Ukuran default semua elemen*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Gaya umum untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#section1{
+	color: #FFFFFF;
+	background-color: #FF0000
+}
+#section2{
+	color: #000000;
+	background-color: #FFFF00
+}
+#section3{
+	color: #0000FF;
+	background-color: #00FF00
+}
+div#container {
+	position: relative;
+  	top: 60px;
+}
+/* Gaya untuk setiap section */
+section {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+	border: 10px solid white;
+    background-color: #A52A2A;
+}
+
+h1{
+	position: relative;
+	top: 20px;
+	color: #000066;
+	text-align: center;
+}
+
+section h2{
+	width: 120px;
+	height: 30px;
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+
+
+}
+/* Gaya untuk paragraf dalam section */
+p {
+	clear: right;
+	position: relative;
+    color: #FFFFFF;
+    margin-top: 30px; 
+}
+
+/* Gaya untuk desktop view (992px dan lebih) */
+section {
+    width: 33.33%;
+    float: left;
+}
+
+/* Gaya untuk tablet view (768px - 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 50%;
+        float: left;
+    }
+
+    section:nth-child(3) {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* Gaya untuk mobile view (767px dan kurang) */
+@media only screen and (max-width: 767px) {
+    section {
+        width: 100%;
+        float: none;
+    }
+}
